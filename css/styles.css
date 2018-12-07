@@ -1,0 +1,990 @@
+body{
+    overflow-x: hidden;
+}
+.ljonid-logo {
+    margin-top: 8px;  
+    height: 152px;
+    width: 102px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 180px;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-bottom: 24px;
+    padding-left: 16px;
+}
+
+.nav-list-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-end;
+    padding-right: 16px;
+    padding-bottom: 24px;
+    margin-right: 40px;
+}
+nav.nav-container ul li a{
+    text-decoration: none;
+    margin-right: 24px;
+    margin-left: 40px;
+    font-family: Lora;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+nav.nav-container ul li a:hover{
+    border-bottom: 3px solid white;
+}
+
+/*****     HERO BANNER     ******/
+
+.hero-container {
+    background-image: url(../images/bannermynd.png);
+    height: 851px;
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hero-slagord {
+    height: 222px;
+    font-family: Rokkitt;
+    line-height: normal;
+    font-size: 70px;
+    margin-left: 48px;
+    margin-bottom: 128px;
+}
+
+.button-1 {
+    width: 456px;
+    height: 152px;
+    border: 3px white;
+    border-style: solid;
+    top: 792px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 48px;
+    margin-bottom: 184px;
+    
+}
+.button-1:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition-duration: 0.7s;
+}
+.button-1 a {
+    text-decoration: none;
+    font-size: 70px;
+    font-family: Rokkitt;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+}
+.tilbod-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 128px;
+}
+.button-2 {
+    width: 540px;
+    height: 161px;
+    border: 1px white;
+    border-style: solid;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.button-2:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition-duration: 0.7s;
+}
+
+.boltatilbod-card .button-2 {
+    margin-top: 99px;
+}
+
+.pizzatilbod-card .button-2 {
+    margin-top: 99px;
+}
+.button-2 a {
+    text-decoration: none;
+    text-align: center;
+    font-family: Rokkitt;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.boltatilbod-card {
+    background-image: url(../images/boltatilbod.png);
+    height: 360px;
+}
+
+.pizzatilbod-card {
+    background-image: url(../images/pizzatilbod.png);
+    height: 360px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin: 0 auto;
+}
+.bolta-modal-content {
+    background-image: url("../images/BoltaTilbod-OnClick.png");
+    background-size: cover;
+    width: 1180px;
+    height: 1152px;
+    margin: 0 auto;
+}
+.pizza-modal-content {
+    background-image: url("../images/PizzaTilbodOnClick.png");
+    background-size: cover;
+    width: 1180px;
+    height: 576px;
+    margin: 0 auto;
+}
+
+.close, .closePizza {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closePizza:hover, .close:hover,
+.closePizza:focus,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/***** EVENT SECTION *****/
+
+
+.event-section {
+    margin-top: 128px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+}
+.event-container {
+    width: 740px;
+    height: 568px;
+    margin-top: 48px;
+}
+.event-head {
+    background-color: black;
+    width: 740px;
+    height: 167px;
+    border: 1px black;
+    border-style: solid;
+    margin: auto;
+}
+.event-head h1{ 
+    color: white;
+    font-family: Rokkitt;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-top: 56px;
+
+}
+.event1, .event2, .event3 {
+    width: 740px;
+    height: 134px;
+}
+.event-new {
+    border: 1px black;
+    border-style: solid;
+    width: 740px;
+    height: 134px;
+    font-family: Rokkitt;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+}
+.event-new h3 {
+    
+    margin-top: 48px;
+}
+.event2 {
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+}
+.mobile-head {
+    display: none;
+}
+
+
+
+
+/** AFHVERJU OKKUR SECTION **/
+
+
+.afhverju-section {
+    padding-top: 128px;
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: center;
+}
+.info-og-panta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 24px;
+}
+.afhverju-okkur-container {
+    width: 1180px;
+    height: 608px;
+;
+    background-color: black;
+}
+
+.pantadusalinn-container {
+    background-image: url(../images/pantadu.jpg);
+    background-size: cover; 
+    width: 540px;
+    height: 285px;
+}
+.afhverju-head {
+    width: 1180px;
+    height: 96px;
+}
+.afhverju-info {
+    width: 481px;
+    height: 584px;
+}
+.afhverju-info p {
+    font-size: 24px;
+    color: white;
+    font-family: Rokkitt;
+    line-height: 41px;
+    font-size: 24px;
+}
+
+.afhverju-head h1{ 
+    color: white;
+    font-family: Rokkitt;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    padding-top: 24px;
+}
+
+.button-3 {
+    width: 541px;
+    height: 140px;
+    top: 2778px;
+    position: absolute;
+    background: #941515;
+    border: none;
+}
+.button-3:hover {
+    background-color: rgba(148, 21, 21, 0.7);
+    transition-duration: 0.7s;
+}
+
+.button-3 a, .button-4 a {
+    text-decoration: none;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+
+/** FOOTER **/
+
+
+footer {
+    width: 100%;
+    height: 360px;
+    background: #941515;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+footer, footer ul li, footer ul li a{
+    text-decoration: none;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    color: #FFFFFF;
+}
+footer ul li {
+    padding-bottom: 8px;
+}
+
+#footer-nav li {
+    padding-bottom: 24px;
+}
+
+#footer-opnun {
+    padding-bottom: 64px;
+}
+#footer-address {
+    padding-bottom: 150px;
+}
+
+footer img {
+    width: 192px;
+    height: 260px;
+}
+#facebook-logo {
+    width: 40px;
+    height: 40px;
+}
+
+
+/***** ÞJÓNUSTA *****/
+
+
+.thjonustu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.veisluthjonustu-container {
+    width: 1180px;
+    height: 856px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 8px;
+}
+.veislu-content {
+    width: 1180px;
+    height: 780px;
+}
+.veisluthjonustu-header {
+    width: 1180px;
+    height: 116px;
+    background-color: black;
+}
+
+.veisluthjonustu-header h1 {
+    color: white;
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    padding-top: 40px;
+}
+
+.veislu-paragraphs h3 {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 55px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    padding: 16px 0; 
+}
+
+.veisluthjonustu-mynd {
+    background-image: url(../images/veisluthjonusta-pic.png);
+    width: 540px;
+    height: 405px;
+    margin: 0 auto;
+}
+.pantasal-container {
+    width: 1180px;
+    height: 960px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 8px;
+    margin-top: 16px;
+}
+.pantasal-mynd {
+    background-image: url(../images/pantasal-pic.png);
+    width: 540px;
+    height: 405px;
+    margin: 0 auto;
+}
+.veislu-button {
+    width: 540px;
+    height: 140px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.button-4 {
+    width: 539px;
+    height: 140px;
+    position: absolute;
+    background: #941515;
+    border: none;
+}
+.button-4:hover {
+    background-color: rgba(148, 21, 21, 0.8);
+    transition-duration: 0.7s;
+}
+
+.hafa-samband-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.hafa-samband-header {
+    font-size: 40px;
+}
+.hafa-samband-container, .hafa-samband-container input, textarea {
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    width: 632px;
+}
+ .hafa-samband-container input {
+    text-indent: 8px;   
+}
+.hafa-samband-container input .checker {
+    width: 0;
+}
+#nafn, #netfang, #simi {
+    margin-top: 24px;
+}
+#skilabod {
+    text-indent: 8px;
+    padding-bottom: 400px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+#skilabod textarea {
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;  
+}
+
+.senda-button {
+    width: 115px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.senda-button a {
+    text-decoration: none;
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-indent: 8px;
+    color: #000000;
+}
+
+
+/***** UM OKKUR *****/
+
+.umokkur-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 48px;
+}
+.umokkur-paragraphs{
+    width: 540px;
+    height: auto;
+    left: 130px;
+    top: 368px;
+    font-family: Rokkitt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 49px;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+}
+
+.umokkur-myndir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-top: 32px;
+
+}
+
+.inngangur-ad-ljoni {
+    background-image: url(../images/inngangur-ljonid.png);
+    width: 345px;
+    height: 258px;
+    background-size: cover;
+}
+
+.billiardbord-pic {
+    background-image: url(../images/billiardbord.png);
+    width: 345px;
+    height: 228px;
+    background-size: cover; 
+    margin-bottom: 48px;
+    margin-top: 32px;
+}
+
+
+/***** MATSEÐILL *****/
+.matsedill-nav ul li a{
+    text-decoration: none;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.matsedill-nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+.matsedill-nav ul{
+    display: flex;
+    justify-content: center;
+}
+.matsedill-nav a {
+    text-decoration: none;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    text-align: right;
+    letter-spacing: 0.12em;
+}
+#matsedill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 296px;
+    max-width: 1264px;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 330px;
+}
+strong {
+    font-weight: bold;
+}
+.pizza-card {
+    width: 288px;
+    height: 582px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: Lora;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    margin-top: 24px;
+}
+.pizza-card img {
+    width: 256px;
+    height: 262px;
+}
+.pizza-card h3, .hamborgara-card h3 {
+    font-weight: bold;
+}
+.pizza-card img, .pizza-card h3, .pizza-card p1, .pizza-card p2, .pizza-card p3{
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-top: 16px;
+
+}
+.pizza-verd {
+    padding-left: 114px;
+    padding-top: 24px;
+    border-top: 1px solid black;
+}
+.vidauki {
+    padding-left: 114px;
+    padding-top: 24px;
+}
+.verd-litilmid, .verd-stor {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.hamborgara-card {
+    width: 288px;
+    height: 518px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: Lora;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.16em;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.hamborgara-card img {
+    width: 256px;
+    height: 262px;
+}
+.hamborgara-card img, .hamborgara-card h3, .hamborgara-card p{
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+/***** RESPONSIVE *****/
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .nav-container{
+        display: none;
+    }
+    .mobile-head{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        height: 180px;
+    }
+    .mobile-logo {
+        display: flex; 
+        margin-left: 80px;
+        height: 152px;
+
+        width: 102px;
+        padding-top: 8px; 
+    }
+    .mobile-head .hamburger-container {
+        margin-top: 16px;   
+    }
+    .hamburgerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: #000000;
+    }
+    .hamburgerContent a {
+        text-decoration: none;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.16em;
+        color: #FFFFFF;
+        padding: 8px 0;
+        margin-right: 16px;
+    }
+    #mobile-search {
+        padding-bottom: 16px;
+    }
+    .menu{
+        width: 42px;
+        height: 24px;
+        margin-top: 66px;
+        margin-left: 75px;
+    }
+    .burger {
+        width: 35px;
+        height: 5px;
+        background-color: white ;
+        margin: 6px 0;
+    }
+    .burgerMarg{
+        margin-top: 80px;
+    }
+    .hero-container {
+        background-image: url(../images/hero-mobile.png);
+        width: 375px;
+        height: 262px;
+        color: white;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-slagord{
+        display: none;
+    }
+
+    .tilbod-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+    }
+    .button-1 {
+        width: 167px;
+        height: 55.67px;
+        border: 3px white;
+        border-style: solid;
+        top: 792px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .button-1 a {
+        font-size: 24px;
+    }
+    .boltatilbod-card, .pizzatilbod-card {
+        width: 345px;
+        height: 230px;
+    }
+    .pizzatilbod-card {
+        margin: 32px 0;
+    }
+    .button-2 {
+        width: 345px;
+        height: 102.86px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .pizzatilbod-card .button-2, .boltatilbod-card .button-2 {
+        
+        margin-top: 64px;
+    }
+
+    .bolta-modal-content {
+        background-image: url("../images/PizzaTilboð-OnClickMobile.png");
+        background-size: cover;
+        width: 337px;
+        height: 329px;
+        margin: 0 auto;
+    }
+    .pizza-modal-content {
+        background-image: url("../images/pizzaTilbodFMobile.png");
+        background-size: cover;
+        width: 345px;
+        height: 275px;
+        margin: 0 auto;
+    }
+
+    /***** AFHVERJU OKKUR ****/
+
+    .afhverju-okkur-container {
+        width: 345px;
+        height: 1120px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+    .afhverju-section{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        width: 375px;
+        padding-top: 62px;
+    }
+    .afhverju-head h1 {
+        margin-left: 16px;
+        text-align: initial;
+    }
+    .afhverju-head {
+        font-size: 30px;
+    }
+    .afhverju-info {
+        width: auto;
+    }
+    .info-og-panta-container {
+        flex-direction: column;
+    }
+    .pantadusalinn-container {
+        width: 300px;
+        height: 272px;  
+    }
+    .pantadusalinn-container .button-3 {
+        position: initial;
+        width: 300px;
+        margin-top: 272px;
+    }
+
+    /***** VIÐBURÐIR ****/
+    .event-section {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .event-container{
+        width: 345px;
+        height: 264px;
+    }
+    .event-head h1 {
+        margin-top: 16px;
+    }
+    .event-head {
+        width: 345px;
+        height: 80px;
+    }
+    .event1, .event2, .event3,.event-new {
+        width: 345px;
+        height: 62px;
+    }
+
+    /***** ÞJONUSTA *****/
+    .thjonustu-section {
+        flex-direction: column;
+    }
+    .veisluthjonustu-container, .pantasal-container{
+        width: 345px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pantasal-container{
+        margin-top: 66px;
+    }
+    .pantasal-mynd{
+        background-image: url("../images/pantasal-mobilemynd.png");
+        width: 280px;
+        height: 186px;
+        background-size: cover;
+    }
+    .veislu-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 32px;
+    }
+    .veisluthjonustu-header {
+        width: 345px;
+        height: 96px;
+    }
+    .veisluthjonustu-mynd, .pantasal-mynd {
+        width: 280px;
+        height: 210px;
+        margin: 0;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    .veislu-paragraphs {
+        width: 322px;
+        height: auto;
+        margin-top: 16px;
+    }
+    .veislu-button, .veislu-button .button-4 {
+        width: 279px;
+        height: 88px;
+        margin: 0;
+        font-size: 24px;
+    }
+    .veislu-button {
+        margin-left: 32px;
+    }
+    .veislu-button a {
+        font-size: 32px;
+    }
+    .hafa-samband-container, .hafa-samband-container input, textarea {
+        width: 296px;
+    }
+    .hafa-samband-container, .hafa-samband-container input, textarea
+    .hafa-samband-container {
+        margin-bottom: 32px;
+    }
+    .checkboxes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: initial;
+    }
+
+    /***** UMOKKUR *****/
+    .umokkur-section {
+        width: 345px;
+        height: auto;
+        flex-direction: column;
+    }
+    .inngangur-ad-ljoni {
+        width: 345px;
+    }
+    .billiardbord-pic {
+        width: 345px;
+    }
+    .umokkur-paragraphs {
+        width: auto;
+        margin-left: 16px;
+    }
+    /***** FOOTER ****/
+    footer {
+        width: 375px;
+        height: 761px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #footer-logo {
+        width: 82px;
+        height: 111px;
+        display: none;
+    }
+    #footer-address{
+        padding: 0;
+        margin-left: 48px;
+    }
+    #footer-opnun {
+        padding: 0;
+        margin-left: 48px;
+    }
+    #footer-nav-div {
+        margin-left: 48px;
+        margin-bottom: 155px;
+    }
+
+    /****  MATSEÐILL *****/
+    .matsedill-nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+    .matsedill-nav ul li {
+        margin-top: 16px;
+    }   
+    #matsedill-container {
+        margin: 0 auto;
+    }
+    }
+    
+    a, button {
+    cursor: pointer;
+    }
